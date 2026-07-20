@@ -1,0 +1,31 @@
+name: tests
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: python -m pip install -e '.[dev]'
+      - name: Tests
+        run: pytest -q
+      - name: Fast integration demo
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          cfg = json.loads(Path('configs/demo.json').read_text())
+          cfg.update(n_per_class=20, epochs=1, output_dir='results/ci')
+          Path('configs/ci.json').write_text(json.dumps(cfg))
+          PY
+          radio-intel-lab demo --config configs/ci.json

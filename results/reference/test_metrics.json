@@ -1,0 +1,7 @@
+{
+  "n_test": 60,
+  "balanced_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "candidate_brier": 0.014504100196063519,
+  "n_parameters": 6705
+}

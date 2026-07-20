@@ -1,0 +1,41 @@
+{
+  "n_samples": 400,
+  "image_shape": [
+    2,
+    32,
+    32
+  ],
+  "metadata_features": 6,
+  "class_names": [
+    "noise",
+    "candidate_drift",
+    "persistent_narrowband_rfi",
+    "broadband_burst",
+    "spectral_comb_rfi"
+  ],
+  "split_class_counts": {
+    "train": {
+      "noise": 56,
+      "candidate_drift": 56,
+      "persistent_narrowband_rfi": 56,
+      "broadband_burst": 56,
+      "spectral_comb_rfi": 56
+    },
+    "val": {
+      "noise": 12,
+      "candidate_drift": 12,
+      "persistent_narrowband_rfi": 12,
+      "broadband_burst": 12,
+      "spectral_comb_rfi": 12
+    },
+    "test": {
+      "noise": 12,
+      "candidate_drift": 12,
+      "persistent_narrowband_rfi": 12,
+      "broadband_burst": 12,
+      "spectral_comb_rfi": 12
+    }
+  },
+  "group_leakage_prevented": true,
+  "seed": 20260720
+}

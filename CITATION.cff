@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as a software prototype."
+title: "radio-signal-intelligence-lab"
+version: 0.1.0
+authors:
+  - family-names: Das
+    given-names: Pratyush Kumar
+    orcid: "https://orcid.org/0000-0002-4326-8598"
+date-released: 2026-07-20
+license: MIT
+repository-code: "https://github.com/pkd-45/radio-signal-intelligence-lab"
