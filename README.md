@@ -4,7 +4,7 @@
 
 **A compact multimodal AI benchmark for radio technosignature candidate triage.**
 
-This independent portfolio project demonstrates how paired ON/OFF time-frequency data can be turned into a balanced, provenance-tracked dataset, a small purpose-built PyTorch model, and an actionable candidate ranking. It was designed around the technical requirements of the Oxford Intelligence Engineer role in Breakthrough Listen.
+This independent research prototype examines how paired ON/OFF time-frequency observations can be transformed into a balanced, provenance-tracked dataset, a small PyTorch classifier, and an interpretable candidate-ranking product.
 
 It is **not Breakthrough Listen production software**, does not bundle Breakthrough Listen data, and does not claim a real technosignature result.
 
@@ -84,7 +84,7 @@ The shipped controlled reference run uses 400 balanced synthetic samples (80 per
 
 ## Optional bounded LLM briefing
 
-The role also asks for familiarity with commercial LLMs. This repository keeps that use narrow and auditable:
+For reproducible communication and review, the repository includes a bounded, auditable text-briefing example:
 
 ```bash
 radio-intel-lab brief results/reference/candidate_ranking.csv \
