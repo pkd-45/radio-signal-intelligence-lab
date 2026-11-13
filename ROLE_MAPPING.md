@@ -1,8 +1,8 @@
-# Mapping to Oxford Intelligence Engineer (vacancy 187345)
+# Implemented signal-analysis and software capabilities
 
-This repository is a small, inspectable demonstration aligned to the advertised work. It does not claim to be Breakthrough Listen production software.
+This repository is a small, inspectable research prototype. It does not claim to be Breakthrough Listen production software.
 
-| Advertised need | Inspectable evidence in this repository |
+| Capability | Implemented evidence |
 |---|---|
 | Transform raw research data into actionable datasets | Deterministic ON/OFF dynamic-spectrum generator, balanced manifest, leakage-safe group splits, optional `blimpy` adapter, candidate ranking CSV |
 | Small purpose-built open-source models | Compact multimodal CNN with fewer than 30k trainable parameters and TorchScript export |
@@ -21,4 +21,4 @@ This repository is a small, inspectable demonstration aligned to the advertised 
 - `dsa-hi-survey-ops`: spectral-line planning, RFI-aware selection, FITS-cube injection/recovery, science-product QA.
 - `Horn-antenna-21-cm`: early hands-on radio hardware, 21-cm observing and analysis experience.
 
-The combined portfolio demonstrates a progression from radio instrumentation and astronomy, through science pipelines, to compact AI and operationally reliable research software.
+These repositories explore radio instrumentation, scientific pipelines, compact machine learning, and reliable research software.
